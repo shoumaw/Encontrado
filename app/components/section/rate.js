@@ -7,7 +7,7 @@ const Datetime = require('../../utils/datetime');
 
 const Entry = React.createClass({
     propTypes: {
-        entry: ResumePropTypes.education
+        entry: ResumePropTypes.rate
     },
 
     render: function () {
@@ -30,18 +30,18 @@ const Entry = React.createClass({
     }
 });
 
-const Education = React.createClass({
+const Rate = React.createClass({
     propTypes: {
-        content: ResumePropTypes.educationSet
+        content: ResumePropTypes.rateSet
     },
 
     render: function () {
         return (
-            <section id='education'>
-                <div className='row education'>
+            <section id='rate'>
+                <div className='row rate'>
                     <div className='two columns header-col'>
                         <h1>
-                            <span>Education</span>
+                            <span>Rate</span>
                         </h1>
                     </div>
                     <div className='ten columns main-col'>
@@ -57,4 +57,4 @@ const Education = React.createClass({
     }
 });
 
-module.exports = Education;
+module.exports = Rate;

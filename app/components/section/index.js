@@ -5,37 +5,24 @@ const React = require('react');
 const ResumePropTypes = require('../../prop_types/resume');
 const About = require('./about');
 const Search = require('./search');
-const Education = require('./education');
-const Skills = require('./skills');
-const Portfolio = require('./portfolio');
-const References = require('./references');
+const Rate = require('./rate');
 const Footer = require('./footer');
 
 const Section = React.createClass({
     propTypes: {
         basics: ResumePropTypes.basics,
         search: ResumePropTypes.searchSet,
-        education: ResumePropTypes.educationSet,
-        skills: ResumePropTypes.skillsSet,
-        languages: ResumePropTypes.languagesSet,
-        portfolio: ResumePropTypes.publicationsSet,
-        references: ResumePropTypes.referencesSet
+        rate: ResumePropTypes.rateSet,
+        languages: ResumePropTypes.languagesSet
     },
 
     render: function () {
-        const skillsContent = {
-            skills: this.props.skills,
-            languages: this.props.languages
-        };
 
         return (
             <div>
                 <About content={this.props.basics}/>
                 <Search content={this.props.search}/>
-                <Education content={this.props.education}/>
-                <Skills content={skillsContent}/>
-                <Portfolio content={this.props.portfolio}/>
-                <References content={this.props.references}/>
+                <Rate content={this.props.rate}/>
                 <Footer content={this.props.basics}/>
             </div>
         );

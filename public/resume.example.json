@@ -56,13 +56,8 @@
             ]
         }
     ],
-    "education": [
+    "rate": [
         {
-            "institution": "<INSTITUTION_NAME>",
-            "area": "<AREA_OF_STUDY>",
-            "studyType": "<STUDY_TYPE>",
-            "startDate": "<START_DATE>",
-            "endDate": "<END_DATE>",
             "gpa": "<GRADE_POINT_AVERAGE>",
             "summary": "<SUMMARY>",
             "courses": [
@@ -99,27 +94,6 @@
             ]
         }
     ],
-    "skills": [
-        {
-            "title": "<DESCRIPTION_TITLE>",
-            "description": [
-                "<DESCRIPTION_1>",
-                "<DESCRIPTION_2>",
-                "<DESCRIPTION_3>"
-            ],
-            "skillDetails": [
-                {
-                    "name": "<SKILL_NAME>",
-                    "level": "<SKILL_LEVEL>",
-                    "keywords": [
-                        "<KEYWORD_1>",
-                        "<KEYWORD_2>",
-                        "<KEYWORD_3>"
-                    ]
-                }
-            ]
-        }
-    ],
     "languages": [
         {
             "name": "<LANGUAGE_NAME>",
@@ -134,14 +108,6 @@
                 "<KEYWORD_2>",
                 "<KEYWORD_3>"
             ]
-        }
-    ],
-    "references": [
-        {
-            "name": "<REFERENCE_NAME>",
-            "position": "<POSITION>",
-            "company": "<COMPANY>",
-            "reference": "<SUMMARY>"
         }
     ]
 }

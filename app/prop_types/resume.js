@@ -86,7 +86,7 @@ module.exports.volunteerSet = PropTypes.arrayOf(
     module.exports.volunteer
 ).isRequired;
 
-module.exports.education = PropTypes.shape({
+module.exports.rate = PropTypes.shape({
     institution: PropTypes.string.isRequired,
     area: PropTypes.string.isRequired,
     studyType: PropTypes.string.isRequired,
@@ -96,8 +96,8 @@ module.exports.education = PropTypes.shape({
     summary: PropTypes.string.isRequired,
     courses: module.exports.bulletPoints
 });
-module.exports.educationSet = PropTypes.arrayOf(
-    module.exports.education
+module.exports.rateSet = PropTypes.arrayOf(
+    module.exports.rate
 ).isRequired;
 
 module.exports.awards = PropTypes.shape({
@@ -133,14 +133,6 @@ module.exports.skillDetailsSet = PropTypes.arrayOf(
     module.exports.skillDetails
 );
 
-module.exports.skills = PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    description: module.exports.bulletPoints,
-    skillDetails: module.exports.skillDetailsSet
-});
-module.exports.skillsSet = PropTypes.arrayOf(
-    module.exports.skills
-).isRequired;
 
 module.exports.languages = PropTypes.shape({
     name: PropTypes.string.isRequired,
@@ -158,12 +150,3 @@ module.exports.interestsSet = PropTypes.arrayOf(
     module.exports.interests
 ).isRequired;
 
-module.exports.references = PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    position: PropTypes.string.isRequired,
-    company: PropTypes.string.isRequired,
-    reference: PropTypes.string.isRequired
-});
-module.exports.referencesSet = PropTypes.arrayOf(
-    module.exports.references
-).isRequired;

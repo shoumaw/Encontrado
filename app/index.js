@@ -16,10 +16,7 @@ function getNavigation() {
         home: 'Home',
         about: 'About',
         search: 'Search',
-        education: 'Education',
-        skill: 'Skills',
-        portfolio: 'Portfolio',
-        testimonials: 'References'
+        rate: 'Rate'
     };
 }
 
